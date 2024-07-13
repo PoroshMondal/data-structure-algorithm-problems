@@ -6,6 +6,8 @@
     - Item Insertion in LA
     - Item Deletion in LA
     - Bubble sort in Linear Array
+    - Linear Search in LA
+    - Binary Search in LA
  
 ### Bubble Sort
 **Algorithm:** (Bubble Sort) BUBBLE (DATA, N)
@@ -43,5 +45,7 @@ Here DATA is a Linear Array with N elements, and ITEM is a given search element 
 
 **Note:** The technique of Linear Search is to set the ITEM to the end of the Array and start searching by comparing the item to each element of DATA(Linear Array) 
 
+### Binary Search
+**Algorithm:** (Binary Search) BINARY(DATA, LB, UB, ITEM, LOC)
 
 
