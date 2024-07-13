@@ -47,5 +47,26 @@ Here DATA is a Linear Array with N elements, and ITEM is a given search element 
 
 ### Binary Search
 **Algorithm:** (Binary Search) BINARY(DATA, LB, UB, ITEM, LOC)
+Here DATA is a sorted array with lower bound LB and upper bound UB, and ITEM is a given element of information to be search in the array. The variables BEG, END and MID denoe respectively the beginning, end and middle location of a segment of elements of DATA. So, this algorithm finds location LOC of ITEM in the array DATA or set the location LOC=NULL
 
+```
+1. Set BEG:= LB, END:= UB and MID = INT((BEG+END)/2) [Initialize the segment variables]
+2. Repeat Steps 3 and 4 while BEG<=END and DATA[MID]!=ITEM
+3.     If ITEM<DATA[MID], then:
+           set END:= MID - 1
+       Else
+           Set BEG:= MID + 1
+   [End of If Statement]
+4. Set MID := INT((BEG + END)/2)
+  [End of Step 2 loop]
+5. If DATA[MID] = ITEM, then,
+          set LOC:= MID
+   Else
+          set LOC:= NULL
+   [End of If structure]
+ 6. Exit.
+```
 
+**Note:** The technique of Binary Search is to Divide the array in the middle and the decide the ITEM is exist in the middle, if not exist then decide ITEM is on left or righ side by comparing the ITEM value with DATA[MID]. It will do it unitl the condition of BEG<=END get false. Means the algorithm eventually arrives at the stage BEG = END = MID and at that time the BEN value is large then END BEN>END.
+
+**Limits:** The DATA array or list must be sorted. To resolve this some other Data Structure can be used such as Linked List, Binary Search Tree (BST) to store the data.
