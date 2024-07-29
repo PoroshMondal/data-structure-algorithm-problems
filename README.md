@@ -76,7 +76,18 @@ A two-dimensional m*n array A is a collection of m.n data elements.
 
 Two-dimensional arrays are called matrices in mathematics and tables in business applications; hence two-dimensional arrays are sometimes called matrix arrays.
 
-For a three-dimensional array, suppose B is a three-dimensional 2*4*3 array containing 24 elements which appear in three layers called pages where each page consists of the 2*4 rectangular array of elements with same third subscript. So, the subscript of a three-dimensional array are called, respectively, the row, column, and pages.
+For a three-dimensional array, suppose B is a three-dimensional 2*4*3 array containing 24 elements which appear in three layers called pages where each page consists of the 2*4 rectangular array of elements with the same third subscript. So, the subscripts of a three-dimensional array are called, respectively, the row, column, and pages.
 
 **Algorithm:** (Matrix Multiplication) MATMUL(A, B, C, M, P, N)
-.....
+Here A is an M * P matrix array, and B is a P * N matrix array. This algorithm stores the product of A and B in an M * N matrix array C. P is used as a column in matrix A and as a row in matrix B. M is used for the number of rows in matrix A, and N is used as the number of columns in matrix B.
+
+```
+1. Repeat steps 2 to 4 for I = 1 to M:
+2.     Repeat steps 3 and 4 for J = 1 to N:
+3.         Set C[I,J] := 0 [Initialize C[I,J] ]
+4.         Repeat for K = 1 to P:
+               C[I,J] := C[I,J] + A[I,K] * B[K,J]
+5. Exit
+```
+
+**Note**: Multiplication rules for two matrices is that the matrices A and B can be multiplied if the number of columns of matrix A is equal to the rows of matrix B. 
