@@ -10,7 +10,7 @@
     - Binary Search in LA
  
 ### Bubble Sort
-**Algorithm:** (Bubble Sort) BUBBLE (DATA, N)
+**Algorithm:** (Bubble Sort) BUBBLE (DATA, N) </br>
 Here DATA is an array with N elements. This algorithm sorts the elements in DATA.
 
 ```
@@ -30,7 +30,7 @@ Here DATA is an array with N elements. This algorithm sorts the elements in DATA
 If the elements or item N=8, total passes are N-1 = 8-1 = 7.
 
 ### Linear Search
-**Algorithm:** (Linear Search) LINEAR (DATA, N, ITEM, LOC)
+**Algorithm:** (Linear Search) LINEAR (DATA, N, ITEM, LOC) </br>
 Here DATA is a Linear Array with N elements, and ITEM is a given search element of information. This algorithm finds the location of the search ITEM in the DATA or sets LOC:=0 if the search is unsuccessful.
 
 ```
@@ -46,7 +46,7 @@ Here DATA is a Linear Array with N elements, and ITEM is a given search element 
 **Note:** The technique of Linear Search is to set the ITEM to the end of the Array and start searching by comparing the item to each element of DATA(Linear Array) 
 
 ### Binary Search
-**Algorithm:** (Binary Search) BINARY(DATA, LB, UB, ITEM, LOC)
+**Algorithm:** (Binary Search) BINARY(DATA, LB, UB, ITEM, LOC) </br>
 Here DATA is a sorted array with lower bound LB and upper bound UB, and ITEM is a given element of information to be searched in the array. The variables BEG, END, and MID denote respectively the beginning, end, and middle location of a segment of the elements of DATA. So, this algorithm finds the location LOC of ITEM in the array DATA or sets the location LOC=NULL
 
 ```
@@ -78,7 +78,7 @@ Two-dimensional arrays are called matrices in mathematics and tables in business
 
 For a three-dimensional array, suppose B is a three-dimensional 2*4*3 array containing 24 elements which appear in three layers called pages where each page consists of the 2*4 rectangular array of elements with the same third subscript. So, the subscripts of a three-dimensional array are called, respectively, the row, column, and pages.
 
-**Algorithm:** (Matrix Multiplication) MATMUL(A, B, C, M, P, N)
+**Algorithm:** (Matrix Multiplication) MATMUL(A, B, C, M, P, N) </br>
 Here A is an M * P matrix array, and B is a P * N matrix array. This algorithm stores the product of A and B in an M * N matrix array C. P is used as a column in matrix A and as a row in matrix B. M is used for the number of rows in matrix A, and N is used as the number of columns in matrix B.
 
 ```
