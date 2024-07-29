@@ -47,7 +47,7 @@ Here DATA is a Linear Array with N elements, and ITEM is a given search element 
 
 ### Binary Search
 **Algorithm:** (Binary Search) BINARY(DATA, LB, UB, ITEM, LOC)
-Here DATA is a sorted array with lower bound LB and upper bound UB, and ITEM is a given element of information to be search in the array. The variables BEG, END and MID denoe respectively the beginning, end and middle location of a segment of elements of DATA. So, this algorithm finds location LOC of ITEM in the array DATA or set the location LOC=NULL
+Here DATA is a sorted array with lower bound LB and upper bound UB, and ITEM is a given element of information to be searched in the array. The variables BEG, END, and MID denote respectively the beginning, end, and middle location of a segment of the elements of DATA. So, this algorithm finds the location LOC of ITEM in the array DATA or sets the location LOC=NULL
 
 ```
 1. Set BEG:= LB, END:= UB and MID = INT((BEG+END)/2) [Initialize the segment variables]
@@ -67,6 +67,16 @@ Here DATA is a sorted array with lower bound LB and upper bound UB, and ITEM is 
  6. Exit.
 ```
 
-**Note:** The technique of Binary Search is to Divide the array in the middle and the decide the ITEM is exist in the middle, if not exist then decide ITEM is on left or righ side by comparing the ITEM value with DATA[MID]. It will do it unitl the condition of BEG<=END get false. Means the algorithm eventually arrives at the stage BEG = END = MID and at that time the BEN value is large then END BEN>END.
+**Note:** The technique of Binary Search is to Divide the array in the middle and decide whether the ITEM exists in the middle, if not then decide whether the ITEM is on the left or right side by comparing the ITEM value with DATA[MID]. It will do it until the condition of BEG<=END gets false. This means, that the algorithm eventually arrives at the stage BEG = END = MID and at that time the BEN value is larger than END BEN>END.
 
 **Limits:** The DATA array or list must be sorted. To resolve this some other Data Structure can be used such as Linked List, Binary Search Tree (BST) to store the data.
+
+### Multidimensional Arrays
+A two-dimensional m*n array A is a collection of m.n data elements.
+
+Two-dimensional arrays are called matrices in mathematics and tables in business applications; hence two-dimensional arrays are sometimes called matrix arrays.
+
+For a three-dimensional array, suppose B is a three-dimensional 2*4*3 array containing 24 elements which appear in three layers called pages where each page consists of the 2*4 rectangular array of elements with same third subscript. So, the subscript of a three-dimensional array are called, respectively, the row, column, and pages.
+
+**Algorithm:** (Matrix Multiplication) MATMUL(A, B, C, M, P, N)
+.....
