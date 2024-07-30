@@ -49,7 +49,7 @@ Here DATA is a Linear Array with N elements, and ITEM is a given search element 
 
 **Note:** The technique of Linear Search is to set the ITEM to the end of the Array and start searching by comparing the item to each element of DATA(Linear Array) 
 
-**code**: Code of [Linear Search](https://github.com/PoroshMondal/data-structure-algorithm-problems/tree/master/arrays/linear_search) algorithm 
+**code**: Code of [linear search](https://github.com/PoroshMondal/data-structure-algorithm-problems/tree/master/arrays/linear_search) algorithm 
 
 ### Binary Search
 **Algorithm:** (Binary Search) BINARY(DATA, LB, UB, ITEM, LOC) </br>
@@ -77,7 +77,7 @@ Here DATA is a sorted array with lower bound LB and upper bound UB, and ITEM is 
 
 **Limits:** The DATA array or list must be sorted. To resolve this some other Data Structure can be used such as Linked List, Binary Search Tree (BST) to store the data.
 
-**code**: Code of the implementation of this [Binary Search](https://github.com/PoroshMondal/data-structure-algorithm-problems/tree/master/arrays/binary_serach) algorithm
+**code**: Code of the implementation of this [binary search](https://github.com/PoroshMondal/data-structure-algorithm-problems/tree/master/arrays/binary_serach) algorithm
 
 ### Multidimensional Arrays
 A two-dimensional m*n array A is a collection of m.n data elements.
