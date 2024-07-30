@@ -8,6 +8,8 @@
     - Bubble sort in Linear Array
     - Linear Search in LA
     - Binary Search in LA
+- Multidimensional Array
+    - Two-dimensional Array  
  
 ### Bubble Sort
 **Algorithm:** (Bubble Sort) BUBBLE (DATA, N) </br>
