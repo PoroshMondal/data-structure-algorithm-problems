@@ -31,7 +31,7 @@ Here DATA is an array with N elements. This algorithm sorts the elements in DATA
 **Notes:** The technique of Bubble Sort is to pass the largest elements to the last.
 If the elements or item N=8, total passes are N-1 = 8-1 = 7.
 
-### [Code of Bubble Sort](https://github.com/PoroshMondal/data-structure-algorithm-problems/tree/master/arrays/bubble_sort)
+**code:** This algorithm is implemented using c code of [bubble sort](https://github.com/PoroshMondal/data-structure-algorithm-problems/tree/master/arrays/bubble_sort)
 
 ### Linear Search
 **Algorithm:** (Linear Search) LINEAR (DATA, N, ITEM, LOC) </br>
