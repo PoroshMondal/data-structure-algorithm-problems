@@ -12,18 +12,18 @@ int main(){
     printf("Enter the number columns for Matrix B: ");
     scanf("%d",&N);
 
-    // input elements for Matrix A
+    //input elements for Matrix A
     printf("\nEnter the elements of matrix A: \n\n");
     inputMatrixEntry(A, M, P);
 
-    // input elements for Matrix B
+    //input elements for Matrix B
     printf("\nEnter the elements of matrix B: \n\n");
     inputMatrixEntry(B, P, N);
 
-    // multiply the AB matrix
+    //multiply the AB matrix
     multiplyMatrix(A,B,C,M,P,N);
 
-    // output the Multiplication of AB
+    //output the Multiplication of AB
     result(C, M, N);
 
     return 0;
