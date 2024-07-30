@@ -49,6 +49,8 @@ Here DATA is a Linear Array with N elements, and ITEM is a given search element 
 
 **Note:** The technique of Linear Search is to set the ITEM to the end of the Array and start searching by comparing the item to each element of DATA(Linear Array) 
 
+**code**: Code of [Linear Search](https://github.com/PoroshMondal/data-structure-algorithm-problems/tree/master/arrays/linear_search) algorithm 
+
 ### Binary Search
 **Algorithm:** (Binary Search) BINARY(DATA, LB, UB, ITEM, LOC) </br>
 Here DATA is a sorted array with lower bound LB and upper bound UB, and ITEM is a given element of information to be searched in the array. The variables BEG, END, and MID denote respectively the beginning, end, and middle location of a segment of the elements of DATA. So, this algorithm finds the location LOC of ITEM in the array DATA or sets the location LOC=NULL
@@ -75,6 +77,8 @@ Here DATA is a sorted array with lower bound LB and upper bound UB, and ITEM is 
 
 **Limits:** The DATA array or list must be sorted. To resolve this some other Data Structure can be used such as Linked List, Binary Search Tree (BST) to store the data.
 
+**code**: Code of the implementation of this [Binary Search](https://github.com/PoroshMondal/data-structure-algorithm-problems/tree/master/arrays/binary_serach) algorithm
+
 ### Multidimensional Arrays
 A two-dimensional m*n array A is a collection of m.n data elements.
 
@@ -95,3 +99,5 @@ Here A is an M * P matrix array, and B is a P * N matrix array. This algorithm s
 ```
 
 **Note**: Multiplication rules for two matrices is that the matrices A and B can be multiplied if the number of columns of matrix A is equal to the rows of matrix B. 
+
+**code**: Two-dimensional arrays implementation using [matrix multiplication](https://github.com/PoroshMondal/data-structure-algorithm-problems/tree/master/arrays/multidimensional_array)  
