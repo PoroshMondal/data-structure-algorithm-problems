@@ -3,8 +3,6 @@
 int main(){
     int A[10][10], B[10][10], C[10][10], M, P, N;
 
-    printf("Matrix Multiplication....");
-
     printf("Enter the number of rows for Matrix A: ");
     scanf("%d",&M);
 
@@ -15,20 +13,23 @@ int main(){
     scanf("%d",&N);
 
     // input elements for Matrix A
+    printf("\nEnter the elements of matrix A: \n\n");
     inputMatrixEntry(A, M, P);
 
     // input elements for Matrix B
-    //inputMatrixEntry(B, P, N);
+    printf("\nEnter the elements of matrix B: \n\n");
+    inputMatrixEntry(B, P, N);
+
+    // multiply the AB matrix
+    multiplyMatrix(A,B,C,M,P,N);
 
     // output the Multiplication of AB
-    result(A, M, P);
+    result(C, M, N);
 
     return 0;
 }
 
 void inputMatrixEntry(int matrix[10][10], int row, int column){
-
-    printf("\nEnter matrix elements: \n\n");
 
     for(int i=0; i<row; i++){
         for(int j=0; j<column; j++){
@@ -40,6 +41,15 @@ void inputMatrixEntry(int matrix[10][10], int row, int column){
 }
 
 void multiplyMatrix(int A[10][10], int B[10][10], int C[10][10], int M, int P, int N){
+
+    for(int i=0; i<M; i++){
+        for(int j=0; j<N; j++){
+            C[i][j] = 0;
+            for(int k=0; k<P; k++){
+                C[i][j] = C[i][j] + A[i][k] * B[k][j];
+            }
+        }
+    }
 
 }
 
